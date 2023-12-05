@@ -1,6 +1,6 @@
 import io
+import os
 
-DAY = 100
 EXAMPLE_INPUT = """"""
 EXAMPLE_OUTPUT = 0
 
@@ -13,7 +13,8 @@ assert solve(io.StringIO(EXAMPLE_INPUT)) == EXAMPLE_OUTPUT
 
 
 def main():
-    with open(f"input/day{DAY:02}.txt") as file:
+    prefix = os.path.splitext(os.path.basename(__file__))[0][:-1]
+    with open(f"input/{prefix}.txt") as file:
         solution = solve(file)
         print(solution)
 
