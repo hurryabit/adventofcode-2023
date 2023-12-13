@@ -6,7 +6,8 @@ EXAMPLE_OUTPUT = 0
 
 
 def solve(reader: io.TextIOBase) -> int:
-    return 0
+    result = 0
+    return result
 
 
 assert solve(io.StringIO(EXAMPLE_INPUT)) == EXAMPLE_OUTPUT
